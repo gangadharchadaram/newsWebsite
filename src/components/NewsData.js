@@ -17,8 +17,7 @@ function NewsData(){
     const [search, setSearch] = useState("dhoni")
     useEffect(() =>{
         (async function f1(){
-            // let url = `https://gnews.io/api/v4/search?q=${search}&lang=en&country=us&max=10&apikey=c43294dc7f42df719d7f03eaafb26998`;
-            let url = `https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey=7aedcde9105e4010a33eb31e613c776c`;
+            let url = `https://newsapi.org/v2/everything?q=tesla&from=2024-02-27&sortBy=publishedAt&apiKey=7aedcde9105e4010a33eb31e613c776c`;
             const response = await fetch(url);
             const data = await response.json();
 
