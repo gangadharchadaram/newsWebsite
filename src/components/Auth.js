@@ -14,7 +14,7 @@ import github_icon from '../components/Assets/github.png';
 function Auth(){
     const [userData, setUserData] = useState("");
     const [action, setAction] = useState("Sign Up")
-    // const [click, setClick] = useState("")
+    const [click, setClick] = useState("")
 
     if (userData){
         window.localStorage.setItem("name", userData.name);
@@ -65,7 +65,7 @@ function Auth(){
               />
           <img src={github_icon} style={{height: "50px", width: "50px",  borderRadius: "50px"}} />
         </div>
-        <div style={{ marginLeft: "100px", borderRadius: "50px"}}>
+        <div style={{ marginLeft: "138px", borderRadius: "50px", marginTop: "20px"}}>
         <GoogleOAuthProvider clientId="929954503961-vmpg6be87tk589437gl9ht0nqb2leqr8.apps.googleusercontent.com">
         <GoogleLogin 
            onSuccess={credentialResponse => {
